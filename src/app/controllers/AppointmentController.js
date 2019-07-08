@@ -13,7 +13,7 @@ class AppointmentController {
       order: ['date'],
       attributes: ['id', 'date'],
       limit: 20,
-      offset: (page - 1) * 20,
+      offset: (page - 1) * 20, // calculo de paginação
       include: [
         {
           model: User,
